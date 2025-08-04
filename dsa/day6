@@ -1,0 +1,12 @@
+# node
+function removeInactiveusers(users){
+    return users.filter(user=>user.inactive);
+}
+const users=[
+  { username: "ali", isActive: true },
+  { username: "sara", isActive: false },
+  { username: "john", isActive: true }
+];
+console.log(removeInactiveusers(users));
+
+

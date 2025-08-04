@@ -1,0 +1,41 @@
+
+let cart = [101, 102, 104];
+let newProduct = 103;
+cart.splice(1,0 ,newProduct);
+console.log(cart);
+
+let waitingList=['ali', 'john', 'sara'];
+    let newstudent='aarav';
+    waitingList.splice(2,0, newstudent);
+console.log(waitingList);
+
+// let chocolateFlavor = ['thirt', 'four','five'];
+// let item = 'five';
+//  chocolateFlavour.splice(2,2,new);
+// console.log(chocolateFlavour);
+// const chocolateFlavour = ['thirt', 'four', 'five'];
+// const item = 'sixe';  
+// chocolateFlavour.splice(2, 2, item);
+// console.log(chocolateFlavour); 
+
+
+const phoneNumbers = [
+  '+919876543210',
+  '+14085551234',
+  '+918888777666',
+  '+12345678901',
+  '+917654321098'
+];
+
+function separatePhoneNumbers(numbers) {
+  const indianNumbers = numbers.filter(num => num.startsWith('+91'));
+  const usNumbers = numbers.filter(num => num.startsWith('+1') && !num.startsWith('+91'));
+
+  return {
+    indianNumbers: indianNumbers,
+    usNumbers: usNumbers
+  };
+}
+
+const result = separatePhoneNumbers(phoneNumbers);
+console.log(result);

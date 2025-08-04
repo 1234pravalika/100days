@@ -1,0 +1,6 @@
+
+// console.log(formatted) Output:
+//['INV-1001', 'INV-1002', 'INV-1003', 'INV-1004']
+let invoices = [1001, 1002, 1003, 1004];
+let formatted = invoices.map(inv => `INV-${inv}`);
+console.log(formatted);
